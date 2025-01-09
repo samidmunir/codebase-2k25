@@ -1,0 +1,32 @@
+[
+    {
+        "id": "1",
+        "title": "Frontend Developer",
+        "company": "IBM",
+        "link": "www.ibm.com/careers",
+        "date_applied": "01-08-2025",
+        "status": "Pending",
+        "description": "ReactJS, Python FastAPI, TailwindCSS",
+        "notes": ""
+    },
+    {
+        "id": "2",
+        "title": "Systems Programmer",
+        "company": "Intel",
+        "link": "www.intel.com/careers",
+        "date_applied": "01-08-2025",
+        "status": "Pending",
+        "description": "C, Assembly, RTOS programming",
+        "notes": ""
+    },
+    {
+        "id": "3",
+        "title": "Backend Developer",
+        "company": "Slack",
+        "link": "www.slack.com/careers",
+        "date_applied": "01-08-2025",
+        "status": "Pending",
+        "description": "Java Springboot, MySQL, ReactJS, System Design",
+        "notes": ""
+    }
+]
