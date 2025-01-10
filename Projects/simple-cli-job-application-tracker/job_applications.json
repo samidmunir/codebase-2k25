@@ -1,32 +1,62 @@
 [
     {
         "id": "1",
-        "title": "Frontend Developer",
-        "company": "IBM",
-        "link": "www.ibm.com/careers",
-        "date_applied": "01-08-2025",
+        "title": "Retail Sales Associate",
+        "company": "Best Buy",
+        "link": "https://jobs.bestbuy.com/bby?id=job_details&req_id=972296BR",
+        "date_applied": "01-09-2025",
         "status": "Pending",
-        "description": "ReactJS, Python FastAPI, TailwindCSS",
-        "notes": ""
+        "description": "Sales, Cashier services, stock mgmt, sales associate",
+        "notes": "ID - 972296BR, Location - Princeton, NJ, $15.00hr-$19.22/hr"
     },
     {
         "id": "2",
-        "title": "Systems Programmer",
-        "company": "Intel",
-        "link": "www.intel.com/careers",
-        "date_applied": "01-08-2025",
+        "title": "Retail Sales Associate",
+        "company": "Best Buy",
+        "link": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?PageType=JobDetails&partnerid=25632&siteid=5649&jobid=3627390&codes=US_INT_BBYCareers&AL=1#jobDetails=3625398_5649",
+        "date_applied": "01-09-2025",
         "status": "Pending",
-        "description": "C, Assembly, RTOS programming",
-        "notes": ""
+        "description": "Sales, cashier services, retail, sales associate, stock mgmt",
+        "notes": "ID - 971510BR, Location - Princetonfull time, $15.00/hr-$19.22/hr\""
     },
     {
         "id": "3",
-        "title": "Backend Developer",
-        "company": "Slack",
-        "link": "www.slack.com/careers",
-        "date_applied": "01-08-2025",
+        "title": "Retail Sales and Merchandising Associate",
+        "company": "Micro Center",
+        "link": "https://recruiting.ultipro.com/MIC1003MEI/JobBoard/e3674ed3-2699-442b-aa28-c0b8436281b9/Candidate/ViewPresence",
+        "date_applied": "01-09-2025",
         "status": "Pending",
-        "description": "Java Springboot, MySQL, ReactJS, System Design",
-        "notes": ""
+        "description": "Retail, sales, merchandising, cashier services",
+        "notes": "ID - RETAI005127, Location - North Jersey, Patterson, full-time"
+    },
+    {
+        "id": "4",
+        "title": "Retail Sales Associate",
+        "company": "Verizon",
+        "link": "https://mycareer.verizon.com/jobs/r-1057305/retail-sales-associate/",
+        "date_applied": "01-09-2025",
+        "status": "Pending",
+        "description": "Retail, sales, technology, ISP",
+        "notes": "ID - R-1057305, Location - East Brunswick, NJ, full-time, $49,000/yr-$59,000/yr"
+    },
+    {
+        "id": "5",
+        "title": "Comcast Software Engineer Co-op",
+        "company": "Comcast",
+        "link": "https://jobs.comcast.com/job/mount-laurel/comcast-software-engineer-co-op/45483/75685316528",
+        "date_applied": "01-09-2025",
+        "status": "Pending",
+        "description": "Co-op/internship (full-time)",
+        "notes": "ID - R397701, Location - Mount Laurel, NJ, $32.00/hr"
+    },
+    {
+        "id": "6",
+        "title": "Retail Service Associate",
+        "company": "Xfinity",
+        "link": "https://jobs.comcast.com/job/woodbridge/xfinity-retail-service-associate-part-time/45483/75493437344",
+        "date_applied": "01-09-2025",
+        "status": "Pending",
+        "description": "Sales, customer support, retail",
+        "notes": "ID - R403045, Location - Woodbridge, New Jersey, part-time, $17.00/hr"
     }
 ]

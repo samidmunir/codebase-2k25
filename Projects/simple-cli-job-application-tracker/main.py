@@ -51,6 +51,56 @@ class JobApplication:
 
 APPLICATIONS_LIST = []
 
+def print_update_job_info_menu(job: JobApplication):
+    print(f'\n\t1. Update title: {job.title}')
+    print(f'\t2. Update company: {job.company}')
+    print(f'\t3. Update link: {job.link}')
+    print(f'\t4. Update application date: {job.date_applied}')
+    print(f'\t5. Update status: {job.status}')
+    print(f'\t6. Update description: {job.description}\n')
+    print(f'\t7. Update notes: {job.notes}\n')
+    print(f'\t8. Return')
+
+# """
+def update_job_controller() -> JobApplication:
+    id_to_update = -1
+
+    while (id_to_update == -1 or id_to_update > len(APPLICATIONS_LIST)):
+        id_to_update = int(input('Enter ID to update job info: '))
+        if id_to_update > 0 and id_to_update <= len(APPLICATIONS_LIST):
+            break
+
+    job_application_to_update = None
+    for job_application in APPLICATIONS_LIST:
+        if job_application.id == id_to_update:
+            job_application_to_update = JobApplication.from_dict(job_application)
+            break
+
+    print_update_job_info_menu(job = job_application_to_update)
+    update_menu_option = -1
+    while (update_menu_option == -1 and update_menu_option > 8):
+        update_menu_option = input('\tSelect a menu otion: ')
+
+        if update_menu_option == 1:
+            print(job_application_to_update)
+        elif update_menu_option == 2:
+            print(job_application_to_update)
+        elif update_menu_option == 3:
+            print(job_application_to_update)
+        elif update_menu_option == 4:
+            print(job_application_to_update)
+        elif update_menu_option == 5:
+            print(job_application_to_update)
+        elif update_menu_option == 6:
+            print(job_application_to_update)
+        elif update_menu_option == 7:
+            print(job_application_to_update)
+        elif update_menu_option == 8:
+            break
+        else:
+            print('\n\tInvalid menu option entered...')
+# """
+
 def create_job_controller(ID_COUNTER: int) -> JobApplication:
     VALID_INPUT = False
     
@@ -132,6 +182,7 @@ def main() -> None:
             print_menu()
         elif NUM_OPTION == 2:
             print('\t\tCalling update_job_controller()...')
+            update_job_controller()
             print()
             print_menu()
         elif NUM_OPTION == 3:
