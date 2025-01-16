@@ -58,5 +58,75 @@
         "status": "Pending",
         "description": "Sales, customer support, retail",
         "notes": "ID - R403045, Location - Woodbridge, New Jersey, part-time, $17.00/hr"
+    },
+    {
+        "id": "7",
+        "title": "Store Associate",
+        "company": "CVS",
+        "link": "https://jobs.cvshealth.com/us/en/job/R0477307/Store-Associate",
+        "date_applied": "01-13-2025",
+        "status": "Pending",
+        "description": "Retail, store asscashier duties, inventory management, updating price info",
+        "notes": "ID - R0477307, Location - 610 West Main St., Freehold, NJ"
+    },
+    {
+        "id": "8",
+        "title": "Store Associate",
+        "company": "CVS",
+        "link": "https://jobs.cvshealth.com/us/en/job/R0478250/Store-Associate",
+        "date_applied": "01-13-2025",
+        "status": "Pending",
+        "description": "Retail, store associate, ccashier duties, inventory mgmt, updating price info",
+        "notes": "ID - R0478250, Location - RT27 South, Franklin Park, NJ"
+    },
+    {
+        "id": "9",
+        "title": "Store Associate",
+        "company": "CVS",
+        "link": "https://jobs.cvshealth.com/us/en/job/R0478361/Store-Associate",
+        "date_applied": "01-13-2025",
+        "status": "Pending",
+        "description": "Retail, store associate, cashier duties, inventory mgmt, updating price info",
+        "notes": "ID - R0478361, Location - Milltown Rd., Bridgewater, NJ, on-site"
+    },
+    {
+        "id": "10",
+        "title": "Retail Sales Consultant",
+        "company": "AT&T",
+        "link": "https://www.att.jobs/job/mercerville-hamilton-square/retail-sales-consultant-hamilton-marketplace/117/72248155536",
+        "date_applied": "01-13-2025",
+        "status": "Pending",
+        "description": "Retail, sales, consulting, tech, telecomm, ISP, GSP",
+        "notes": "ID - R-43765, Location - Hamilton Market Place, Mercerville, NJ, full-time, $15/hr-$17/hr"
+    },
+    {
+        "id": "11",
+        "title": "Part Time Retail Sales Consultant",
+        "company": "AT&T",
+        "link": "https://www.att.jobs/job/edison/part-time-retail-sales-consultant-menlo-park-mall/117/71259381856",
+        "date_applied": "01-13-2025",
+        "status": "Pending",
+        "description": "Retail, sales, consulting, t, telecomm, ISP, GSP, commision-based",
+        "notes": "ID - R-41780, Location - Menlo Park Mall, 20hrs/week, part-time, $15/hr-$18/hr"
+    },
+    {
+        "id": "12",
+        "title": "Mobile Associate, Store-in-Store, Bilingual Hindi",
+        "company": "T-Mobile",
+        "link": "https://careers.t-mobile.com/mobile-associate-store-in-store-bilingual-hindi/job/EA800C1E33AE392FFC994DDA6A5ADFE8",
+        "date_applied": "01-13-2025",
+        "status": "Pending",
+        "description": "Retail, sales, consulting, telecomm, ISP, GSP, commission-based, part-time",
+        "notes": "ID - REQ300102, Location - 100 Grand Ave, North Brunswick, NJ, part-time, $19/hr + commission"
+    },
+    {
+        "id": "13",
+        "title": "Aviation Data Specialist Virtual",
+        "company": "Boeing",
+        "link": "https://jobs.boeing.com/job/englewood/aviation-data-specialist-virtual/185/75837923408",
+        "date_applied": "01-13-2025",
+        "status": "Pending",
+        "description": "aviation, data science, data analysis, Boeing systems",
+        "notes": "ID - 00000442083, Location - REMOTE, data science/analysis, $45k-$62k, Intelligence & Analysis (VB)"
     }
 ]
