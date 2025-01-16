@@ -1,9 +1,10 @@
 import 'react'
+import Hero from './components/Hero/Hero'
 
 const Home = () => {
   return (
     <main className='bg-black text-white'>
-      <h1>HOME</h1>
+      <Hero />
     </main>
   )
 }

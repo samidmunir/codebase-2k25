@@ -1,12 +1,17 @@
+'use client'
 import 'react'
 import Link from 'next/link'
-import { AiFillBug } from 'react-icons/ai'
+import { usePathname } from 'next/navigation'
+import { AiFillBug, AiFillHome, AiFillProject, AiFillContacts, AiFillQuestionCircle } from 'react-icons/ai'
 
 const Navbar = () => {
+    const currentPath = usePathname();
+
     const links = [
-        {label: 'Home', href: '/'},
-        {label: 'Traces', href: '/traces'},
-        {label: 'Users', href: '/users'},
+        {icon: <AiFillHome className='inline text-2xl mr-2 mb-1' />, label: 'Home', href: '/'},
+        {icon: <AiFillProject className='inline text-2xl mr-2 mb-1' />, label: 'Traces', href: '/traces'},
+        {icon: <AiFillContacts className='inline text-2xl mr-2 mb-1' />, label: 'Users', href: '/users'},
+        {icon: <AiFillQuestionCircle className='inline text-2xl mr-2 mb-1' />, label: 'FAQs', href: '/faqs'},
     ]
 
     return (
@@ -21,8 +26,10 @@ const Navbar = () => {
                         <Link 
                             key={link.href} 
                             href={link.href}
-                            className='text-lg font-semibold'
-                        >{link.label}</Link>
+                            className={
+                                `${link.href === currentPath ? 'text-indigo-500': 'text-slate-500'} text-lg font-semibold hover:text-indigo-500 transition-all cursor-default`
+                            }
+                        >{link.icon}{link.label}</Link>
                     ))
                 }
             </ul>
