@@ -1,30 +1,33 @@
-import React from 'react'
+import 'react'
 import Link from 'next/link'
-import {AiFillBug} from 'react-icons/ai'
+import { AiFillBug } from 'react-icons/ai'
 
 const Navbar = () => {
-  const links = [
-    {label: 'Home', href: '/'},
-    {label: 'Users', href: '/users'},
-    {label: 'Traces', href: '/traces'}
-  ]
+    const links = [
+        {label: 'Home', href: '/'},
+        {label: 'Traces', href: '/traces'},
+        {label: 'Users', href: '/users'},
+    ]
 
-  return (
-    <nav className='flex space-x-6 border-b mb-5 px-5 h-14 items-center'>
-      <Link href='/'><AiFillBug /></Link>
-      <ul className='flex space-x-6'>
-        {links.map(link => (
-          <Link 
-            className='text-zinc-500 hover:text-zinc-800 transition-colors'
-            key={link.href} 
-            href={link.href}
-          >
-            {link.label}
-          </Link>
-        ))}
-      </ul>
-    </nav>
-  )
+    return (
+        <nav className='p-4 flex'>
+            <div className='p-4 flex gap-1 text-sky-500'>
+                <AiFillBug className='text-4xl font-bold' />
+                <h1 className='text-3xl font-bold'>Trace</h1>
+            </div>
+            <ul className='p-4 flex mt-1.5 gap-12 ml-4'>
+                {
+                    links.map((link) => (
+                        <Link 
+                            key={link.href} 
+                            href={link.href}
+                            className='text-lg font-semibold'
+                        >{link.label}</Link>
+                    ))
+                }
+            </ul>
+        </nav>
+    )
 }
 
 export default Navbar

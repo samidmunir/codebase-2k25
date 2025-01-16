@@ -1,10 +1,10 @@
-import React from 'react'
+import 'react'
 
 const Home = () => {
   return (
-    <div className='p-4'>
-      <h1 className='text-4xl'>Home</h1>
-    </div>
+    <main className='bg-black text-white'>
+      <h1>HOME</h1>
+    </main>
   )
 }
 
