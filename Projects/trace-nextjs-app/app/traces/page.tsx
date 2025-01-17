@@ -8,7 +8,8 @@ interface Trace {
   author: string;
 }
 
-const Traces = () => {
+const Traces = async () => {
+  await new Promise((resolve) => setTimeout(resolve, 2000))
   const traces = [
     {title: 'Memory leak in cart before checkout', description: 'Lorem ipsum odor amet, consectetuer adipiscing elit. Ante torquent aptent nam; magna facilisis nulla. Ad euismod facilisi ac laoreet nostra ut consequat habitant. Eu nam egestas netus nulla sollicitudin id aliquam hendrerit. Malesuada fames dolor integer class fermentum fames. Adipiscing curabitur ad cursus nascetur mattis malesuada.', author: 'User 1'},
     {title: 'CTA button not working', description: 'Lorem ipsum odor amet, consectetuer adipiscing elit. Ante torquent aptent nam; magna facilisis nulla. Ad euismod facilisi ac laoreet nostra ut consequat habitant. Eu nam egestas netus nulla sollicitudin id aliquam hendrerit. Malesuada fames dolor integer class fermentum fames. Adipiscing curabitur ad cursus nascetur mattis malesuada.', author: 'User 2'},
