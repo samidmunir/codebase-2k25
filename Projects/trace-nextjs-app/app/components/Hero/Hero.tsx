@@ -4,7 +4,7 @@ import './Hero.css'
 
 const Hero = () => {
   return (
-    <section className='p-4 h-96'>
+    <section className='hero-section p-4'>
       <h1 className='text-4xl text-center font-bold mt-4'>Trace Your Issues, Own Your Solutions</h1>
       <p className='text-2xl text-center mt-4'>
         Centralize every incoming request in one streamlined hub. Empower your team to spot, manage, and fix issues faster.
