@@ -1,5 +1,7 @@
-export default function Home() {
+export default function Root() {
   return (
-    <div></div>
-  );
+    <main>
+      <h1>Maravex - HERO</h1>
+    </main>
+  )
 }

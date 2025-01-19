@@ -1,0 +1,30 @@
+.main-navbar-link {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    color: #f4f4f5;
+    padding: 0.25rem 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-top: 2px solid #020617;
+    transition: all 0.25s linear;
+}
+
+.main-navbar-link-active {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    color: #020617;
+    background-color: #f4f4f5;
+    padding: 0.25rem 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-top: 2px solid #f4f4f5;
+    transform: scale(1.1);
+    transition: all 0.25s linear;
+}
+
+.main-navbar-link:hover {
+    border-top: 2px solid #f4f4f5;
+    transform: scale(1.1);
+}
