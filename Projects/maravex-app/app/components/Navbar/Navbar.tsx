@@ -15,7 +15,7 @@ const Navbar = () => {
 
     return (
         <nav className='main-navbar w-full bg-slate-950 flex content-center justify-between'>
-            <div className='main-navbar-title text-zinc-100 text-4xl font-bold p-4 flex my-auto ml-4'>
+            <div className='main-navbar-title text-zinc-50 text-4xl font-bold p-4 flex my-auto ml-4'>
                 <AiOutlineRuby className='mr-4' />
                 <h1>Maravex</h1>
             </div>

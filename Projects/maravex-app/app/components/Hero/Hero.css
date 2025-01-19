@@ -1,0 +1,12 @@
+.hero-section-btn {
+    padding: 1rem;
+    border-bottom: 2px solid #020617;
+    background-color: #fafafa;
+    transition: all 0.25s linear;
+}
+
+.hero-section-btn:hover {
+    background-color: #020617;
+    color: #fafafa;
+    transform: scale(1.1);
+}

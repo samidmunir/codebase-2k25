@@ -1,7 +1,10 @@
+import Hero from './components/Hero/Hero'
+import './page.css'
+
 export default function Root() {
   return (
-    <main>
-      <h1>Maravex - HERO</h1>
+    <main className='main'>
+      <Hero />
     </main>
   )
 }
