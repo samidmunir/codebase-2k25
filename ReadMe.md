@@ -7,6 +7,7 @@ Sami Munir | sami.munir2001@gmail.com | Rutgers University
 * trace-nextjs-app *(NextJS, ReactJS*)
 * maravex-app *(NextJS, ReactJS*)
 * next-crud-app *(NextJS, ReactJS, Supabase)*
+* next-supabase-auth *(NextJS, ReactJS, Supabase)*
 ## Tutorials
 * nextjs
 ## uDemy Courses
