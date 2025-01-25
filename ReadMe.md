@@ -8,6 +8,7 @@ Sami Munir | sami.munir2001@gmail.com | Rutgers University
 * maravex-app *(NextJS, ReactJS*)
 * next-crud-app *(NextJS, ReactJS, Supabase)*
 * next-supabase-auth *(NextJS, ReactJS, Supabase)*
+* job-application-tracker *(NextJS, ReactJS, Supabase)*
 ## Tutorials
 * nextjs
 ## uDemy Courses
