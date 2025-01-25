@@ -8,4 +8,5 @@ Sami Munir | sami.munir2001@gmail.com | Rutgers University
 * career-dock *(NextJS, ReactJS, Supabase)*
 ## Tutorials
 * nextjs
+* supabase-auth-nextjs *(NextJS, ReactJS, Supabase)*
 ## uDemy Courses
