@@ -23,7 +23,7 @@ export async function updateSession(request: NextRequest) {
                 },
             },
         }
-    )
+    );
 
     const {data: {user},} = await supabase
         .auth
@@ -35,7 +35,7 @@ export async function updateSession(request: NextRequest) {
         !request.nextUrl.pathname.includes('/register') &&
         !request.nextUrl.pathname.includes('/forgot-password') &&
         !request.nextUrl.pathname.includes('/reset-password') &&
-        !request.nextUrl.pathname.includes('/auth')
+        !request.nextUrl.pathname.startsWith('/auth')
     ) {
         const url = request.nextUrl.clone();
         url.pathname = '/login';
@@ -43,5 +43,5 @@ export async function updateSession(request: NextRequest) {
         return NextResponse.redirect(url);
     }
 
-    return supabaseResponse
+    return supabaseResponse;
 }
