@@ -65,7 +65,8 @@ export default function Home() {
         const user = dataUser.user;
         if (user) {
           console.log(user);
-          router.push('/home');
+          alert('PLEASE CHECK UR FUCKING EMAIL');
+          // router.push('/home');
         } else {
           alert('Failed to sign up')
         }

@@ -1,7 +1,7 @@
 'use client'
 import { supabase } from '@/lib/supabase'
-import { useRouter } from 'next/navigation';
-import { useState } from 'react';
+import { useRouter } from 'next/navigation'
+import { useState } from 'react'
 
 export default function Home() {
     const [userEmail, setUserEmail] = useState<string>('');
