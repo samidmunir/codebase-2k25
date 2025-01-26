@@ -5,7 +5,6 @@ Sami Munir | sami.munir2001@gmail.com | Rutgers University
 * simple-cli-job-application-tracker *(Python)*
 * trace-nextjs-app *(NextJS, ReactJS*)
 * maravex-app *(NextJS, ReactJS*)
-* career-dock *(NextJS, ReactJS, Supabase)*
 ## Tutorials
 * nextjs
 * supabase-auth-nextjs *(NextJS, ReactJS, Supabase)*
