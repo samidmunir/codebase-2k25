@@ -60,7 +60,28 @@ export async function signIn(formData: FormData) {
         }
     }
 
-    // TODO: create a user instance in user_profiles table.
+    const {data: existingUser} = await supabase
+        .from('users')
+        .select('*')
+        .eq('email', credentials?.email)
+        .limit(1)
+        .single();
+    
+    if (!existingUser) {
+        const {error: insertError} = await supabase
+            .from('users')
+            .insert({
+                email: data?.user.email,
+                username: data?.user?.user_metadata?.username,
+            });
+
+        if (insertError) {
+            return {
+                status: insertError?.message,
+                user: null,
+            };
+        }
+    }
 
     revalidatePath('/', 'layout');
 
@@ -80,4 +101,61 @@ export async function signOut() {
 
     revalidatePath('/', 'layout');
     redirect('/login');
+}
+
+export async function getUserSession() {
+    const supabase = await createClient();
+    const {data, error} = await supabase
+        .auth
+        .getUser();
+
+    if (error) {
+        return null;
+    }
+
+    return {status: 'success', user: data?.user};
+}
+
+export async function forgotPassword(formData: FormData) {
+    const supabase = await createClient();
+    const origin = (await headers()).get('origin');
+    
+    const {error} = await supabase
+        .auth
+        .resetPasswordForEmail(
+            formData.get('email') as string, {
+                redirectTo: `${origin}/reset-password`,
+            }
+        );
+
+    if (error) {
+        return {status: error?.message}
+    }
+
+    return {status: 'success'}
+}
+
+export async function resetPassword(formData: FormData, code: string) {
+    const supabase = await createClient();
+    const {error: CodeError} = await supabase
+        .auth
+        .exchangeCodeForSession(code);
+    
+    if (CodeError) {
+        return {status: CodeError?.message}
+    }
+
+    if (formData.get('password_1') as string === formData.get('password_2') as string) {
+        const {error} = await supabase
+            .auth
+            .updateUser({
+                password: formData.get('password_1') as string,
+            })
+        
+        if (error) {
+            return {status: error?.message};
+        }
+    }
+
+    return {status: 'success'};
 }
