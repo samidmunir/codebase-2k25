@@ -38,15 +38,15 @@ const Navbar = async () => {
     ];
 
     return (
-        <nav className='bg-zinc-900 flex justify-between px-16 py-4 align-middle content-center'>
-            <div className='text-neutral-400 flex my-auto transition-all hover:text-neutral-100'>
+        <nav className='bg-zinc-900 flex justify-between px-16 py-4 align-middle content-center shadow-xl'>
+            <div className='text-stone-500 flex my-auto transition-all hover:text-stone-100'>
                 <BsFillGrid1X2Fill className='text-4xl' />
                 <Link href='/' className='text-3xl ml-4 font-bold cursor-default'>Career Dock</Link>
             </div>
-            <div className='text-neutral-400 text-sm my-auto cursor-none'>
+            <div className='text-stone-500 text-sm my-auto cursor-none'>
                 <p className='cursor-none'>example@email.com</p>
             </div>
-            <div className='text-neutral-400 text-xl flex gap-16 my-auto'>
+            <div className='text-xl flex gap-16 my-auto'>
                 {navLinks.map((navLink) => <NavbarLink key={navLink.id} icon={navLink.icon} href={navLink.href} label={navLink.label} />)}
             </div>
         </nav>
